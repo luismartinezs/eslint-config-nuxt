@@ -1,0 +1,87 @@
+{
+  // ===
+  // Spacing
+  // ===
+
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+
+  // ===
+  // Event Triggers
+  // ===
+
+  "editor.formatOnType": false,
+  "editor.formatOnSave": true,
+
+  // Sets prettier as default formatter for any file, overwriting later as needed
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Disables VSC JavaScript syntax validation
+  "javascript.validate.enable": false,
+
+  "eslint.validate": [
+    "vue",
+    "javascript",
+    "javascriptreact",
+    "vue-html",
+    "html"
+  ],
+  "editor.codeActionsOnSave": {
+    // Set to true to fix lint errors on save
+    "source.fixAll.eslint": false
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // ===
+  // Vetur config
+  // https://vuejs.github.io/vetur/setup.html#vs-code-config
+  // ===
+
+  // Disables the default template validation of Vetur, used when a specific eslint configuration is required for .vue templates.
+  // "vetur.validation.template": false,
+
+  "vetur.format.defaultFormatter.html": "prettier",
+  // "vetur.format.defaultFormatter.css": "prettier",
+  // "vetur.format.defaultFormatter.scss": "prettier",
+  // "vetur.format.defaultFormatter.js": "prettier",
+  // "vetur.format.defaultFormatter.ts": "prettier",
+
+  // ===
+  // Config by language
+  // ===
+
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80
+  }
+}
